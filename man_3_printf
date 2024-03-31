@@ -12,4 +12,13 @@ printf
 .br
 \fB#include <stdarg.h>\fR
 .br
-
+\fBint _printf(const char *format, ...);\fR
+.SH DESCRIPTION
+The \fB_printf\fR function is very similar to the printf function from the standard c library.But it is a variadic function that returns the size of the entered characters. The function accepts as argument the format string (*format) and different data types.
+.SH RETURN VALUE
+The function returns the size of the printed characters of the entered string. in case of failure, it returns -1.
+.SH FORMAT SPECIFIERS
+The argument *format can cointain different format specifiers followed by percentage(%)
+.TP
+symbol. It can accept the following specifiers:
+.TP
