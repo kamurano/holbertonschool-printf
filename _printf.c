@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <limits.h>
 #include "main.h"
 /**
  * print_string - prints string
@@ -91,10 +93,10 @@ int _printf(const char *format, ...)
 	va_list ptr;
 	int j = 0, r = 0;
 	
-	if (*format == NULL)
-		return (0);
+	if (format == NULL)
+		exit(98);
 	if (!format)
-		return (0);
+		exit(98);
 	if (*format == '%' && *(format + 1) == 0)
 		return (0);
 	va_start(ptr, format);
