@@ -93,7 +93,7 @@ int _printf(const char *format, ...)
 	
 	if (!format)
 	{
-		return;
+		return (0);
 	}
 	va_start(ptr, format);
 	while (*(format + j))
