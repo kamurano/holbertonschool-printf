@@ -115,4 +115,6 @@ int _printf(const char *format, ...)
 		{
 			r++, _putchar(*(format + j)), j++;
 		}
+
+	}
 }
