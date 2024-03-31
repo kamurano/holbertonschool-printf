@@ -22,3 +22,13 @@ The argument *format can cointain different format specifiers followed by percen
 .TP
 symbol. It can accept the following specifiers:
 .TP
+\fB%c\fR
+For printing one character
+.TP
+\fB%s\fR
+For printing the string
+.TP
+\fB%d and %i\R
+For printing the decimal integers
+.SH EXAMPLES
+.P
