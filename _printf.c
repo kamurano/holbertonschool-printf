@@ -3,6 +3,85 @@
 #include <stdlib.h>
 #include "main.h"
 /**
+ * print_string - prints string
+ * @s: char
+ * @z: int
+ * Return: letter count
+ */
+int print_string(int z, char *s)
+{
+	int i = 0;
+
+	if (!s)
+	{
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
+		z = z + 6;
+	}
+	else
+	{
+		while (*(s + i) != '\0')
+		{
+			_putchar(*(s + i));
+			i++;
+			z++;
+		}
+	}
+	return (z);
+}
+/**
+ * print_char - print char
+ * @c: char
+ * @z: int
+ * Return: letter count
+ */
+int print_char(unsigned int z, char c)
+{
+	_putchar(c);
+	z++;
+	return (z);
+}
+/**
+ * print_decimal - print decimal as string
+ * @value: First operand
+ * Return: 0
+ */
+int print_decimal(int value)
+{
+	int i, j;
+	char buffer[1000000];
+	int printed = 0;
+	unsigned int n;
+
+	if (value < 0)
+	{
+		_putchar('-');
+		printed++;
+		n = -value;
+	}
+	else
+	{
+		n = value;
+	}
+
+	i = 0;
+
+	do {
+		buffer[i++] = '0' + (n % 10);
+		n /= 10;
+		printed++;
+	} while (n > 0);
+	for (j = i - 1; j >= 0; j--)
+	{
+		_putchar(buffer[j]);
+	}
+	return (printed);
+}
+/**
  * _printf - print string
  * @format: format
  * Return: letter count
