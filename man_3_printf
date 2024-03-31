@@ -1,3 +1,12 @@
 #!/bin/bash
 echo ".\" Manual page for printf
 .TH  PRINTF 3.3 "2023-12-02"
+
+.SH NAME
+printf
+
+.SH SYNOPSIS
+\fB#include <stdlib.h>\fR
+.br
+\fB#include <unistd.h>\fR
+.br
