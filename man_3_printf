@@ -37,3 +37,9 @@ For printing the decimal integers
 \fBprintf("Character:[%c]\n", 'H');\fR
 \fBprintf("String:[%s]\n", "I am a string !");\fR
 .SH SEE ALSO
+\fBprinf(),write(),va_start(),va_arg(),va_end()\fR
+.SH AUTHOR
+\fBCahid and Elvin\fR" > _printf.1
+mv _printf.1 /usr/local/man/man1/
+gzip -f /usr/local/man/man1/_printf.1
+man _printf
