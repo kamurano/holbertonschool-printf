@@ -1,0 +1,3 @@
+#!/bin/bash
+echo ".\" Manual page for printf
+.TH  PRINTF 3.3 "2023-12-02"
