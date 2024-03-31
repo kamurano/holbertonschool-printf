@@ -96,7 +96,7 @@ int _printf(const char *format, ...)
 		return (0);
 	}
 	if (*format == '%' && *(format + 1) == 0)
-		retrun (0);
+		return (0);
 	va_start(ptr, format);
 	while (*(format + j))
 	{
