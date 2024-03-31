@@ -91,7 +91,7 @@ int _printf(const char *format, ...)
 	va_list ptr;
 	int j = 0, r = 0;
 	
-	if (format == NULL)
+	if (*format == NULL)
 		return (0);
 	if (!format)
 		return (0);
