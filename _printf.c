@@ -92,7 +92,7 @@ int _printf(const char *format, ...)
 {
 	va_list ptr;
 	int j = 0, r = 0;
-	
+
 	if (format == NULL)
 		exit(98);
 	if (!format)
