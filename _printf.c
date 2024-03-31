@@ -91,10 +91,10 @@ int _printf(const char *format, ...)
 	va_list ptr;
 	int j = 0, r = 0;
 	
-	if (!format)
-	{
+	if (format == NULL)
 		return (0);
-	}
+	if (!format)
+		return (0);
 	if (*format == '%' && *(format + 1) == 0)
 		return (0);
 	va_start(ptr, format);
