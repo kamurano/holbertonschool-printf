@@ -19,7 +19,7 @@ Error Handling In the event of incorrect type usage, the function will return an
 
 Implementation Details The implementation includes the following source files:
 
-_putchar.c: Contains the implementation of the _putchar function. print_char.c: Contains the implementation of the function to print characters (%c). print_string.c: Contains the implementation of the function to print strings (%s). print_decimal.c: Contains the implementation of the functions to print decimals (%d and %i). Bugs No known bugs at the moment.
+_putchar.c:  Contains the implementation of the _putchar function. print_char.c: Contains the implementation of the function to print characters (%c). print_string.c: Contains the implementation of the function to print strings (%s). print_decimal.c: Contains the implementation of the functions to print decimals (%d and %i). Bugs No known bugs at the moment.
 
 
 Authors: Kamran Asmar
