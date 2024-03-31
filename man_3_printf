@@ -32,3 +32,8 @@ For printing the string
 For printing the decimal integers
 .SH EXAMPLES
 .P
+\fBprintf("Negative:[%d]\n", -762534);\fR
+\fBprintf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);\fR
+\fBprintf("Character:[%c]\n", 'H');\fR
+\fBprintf("String:[%s]\n", "I am a string !");\fR
+.SH SEE ALSO
