@@ -10,7 +10,7 @@ Format Specifiers %c: Represents a character. %s: Represents a string. %d: Repre
 
 #include "your_header_file.h"
 
-int main(void) { _printf("%s", "This sentence is extracted from va_args!\n"); return 0; } Output: This sentence is extracted from va_args!
+int  main(void) { _printf("%s", "This sentence is extracted from va_args!\n"); return 0; } Output: This sentence is extracted from va_args!
 
 Return Value The function returns the count of characters printed, excluding the null byte used to terminate output to strings.
 
