@@ -111,6 +111,10 @@ int _printf(const char *format, ...)
 		{
 			r += print_decimal(va_arg(ptr, int)), j += 2;
 		}
+		else if (*(format + j) == '%' && *(format + j + 1) == '%')
+		{
+			_putchar('%'), r++, j += 2;
+		}
 		else
 		{
 			r++, _putchar(*(format + j)), j++;
